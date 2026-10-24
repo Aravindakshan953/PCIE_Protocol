@@ -220,7 +220,7 @@ Total on-chip power is 0.285 W. Static power is 85% of the total, and 49% of the
 
 The testbench (`tb_pcie_top.sv`) connects a root-complex bus-functional model (`ep_*` and `rc_*` sides with separate clocks and resets) through a channel model, and monitors `err_rc2ep`, `err_ep2rc` and a `force_retrain` control. In the captured 0 to 240 ns window, the endpoint reset is released at about 100 ns and the root complex reset at about 135 ns. After each release the transmit symbol buses leave zero and start carrying symbols (`0x0b9` is shown), both error flags stay low and `force_retrain` stays low. Link training and the AXI4-Lite transactions happen later than this window, so they are not visible in the capture.
 
-![Simulation waveform of the PCIe testbench, 0 to 240 ns](images/pcie_waveform.png)
+![Simulation waveform of the PCIe testbench, 0 to 240 ns](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_Waveform_output.png)
 
 *Simulation waveform, 0 to 240 ns.*
 
