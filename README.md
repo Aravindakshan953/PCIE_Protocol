@@ -177,7 +177,7 @@ All user-specified timing constraints are met on the constrained 100 MHz clock: 
 | Hold (WHS / THS) | 0.043 ns | 0.000 ns | 0 | 11,675 |
 | Pulse width (WPWS / TPWS) | 4.232 ns | 0.000 ns | 0 | 3,351 |
 
-![Vivado Design Timing Summary for the PCIe endpoint](images/pcie_timing_summary.png)
+![Vivado Design Timing Summary for the PCIe endpoint](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_Report_timing.png)
 
 *Vivado Design Timing Summary (routed design).*
 
