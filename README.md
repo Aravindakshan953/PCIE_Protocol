@@ -202,7 +202,7 @@ Total on-chip power is 0.285 W. Static power is 85% of the total, and 49% of the
 | Process | typical |
 | Confidence level | Low |
 
-![Vivado power summary for the PCIe endpoint: 0.285 W total](images/pcie_power_summary.png)
+![Vivado power summary for the PCIe endpoint: 0.285 W total](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_report_power.png)
 
 *Vivado power analysis of the implemented netlist (vectorless activity, so confidence is low).*
 
