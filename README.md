@@ -63,7 +63,7 @@ graph TD
 
 *Layer structure of the PCIe endpoint, following the instances in the schematic.*
 
-![Synthesized schematic of the PCIe endpoint showing u_phy, u_dll and u_tl blocks](images/pcie_synthesized.png)
+![Synthesized schematic of the PCIe endpoint showing u_phy, u_dll and u_tl blocks](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_Synthesized.png)
 
 *Synthesized schematic from Vivado: `u_phy` (PHY), `u_dll` (data link layer) and `u_tl` (transaction layer).*
 
