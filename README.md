@@ -1,4 +1,4 @@
-# PCIe Endpoint (PHY, Data Link and Transaction Layers) on Virtex-7 (part No: xc7vx485tffg1930-2L)
+# PCIe Protocol (PHY, Data Link and Transaction Layers) on Virtex-7 (part No: xc7vx485tffg1930-2L)
 
 **RTL Design | System Verilog | Verification | FPGA**
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-This project implements a PCIe-style endpoint stack in SystemVerilog, organized into the three PCI Express layers: a physical layer (PHY) with 8b/10b coding, comma alignment, an elastic buffer and a link training state machine (LTSSM); a data link layer (DLL) with TLP transmit/receive, replay and flow-control updates; and an endpoint transaction layer (TL) with a configuration space. The transaction layer turns incoming memory requests into AXI4-Lite master transactions (32-bit address and data) toward a register file. The design is built around a 10-bit symbol interface (`i_rx_raw` / `o_tx_sym`) rather than a serial transceiver.
+This project implements a PCIe-style Protocol stack in SystemVerilog, organized into the three PCI Express layers: a physical layer (PHY) with 8b/10b coding, comma alignment, an elastic buffer and a link training state machine (LTSSM); a data link layer (DLL) with TLP transmit/receive, replay and flow-control updates; and an endpoint transaction layer (TL) with a configuration space. The transaction layer turns incoming memory requests into AXI4-Lite master transactions (32-bit address and data) toward a register file. The design is built around a 10-bit symbol interface (`i_rx_raw` / `o_tx_sym`) rather than a serial transceiver.
 
 > **Note:** the RTL comes from the open-source `PCI-e_NNF` repository (`rtl/` and `tb/` folders), which is used here as the design under study. It runs on ordinary FPGA I/O: no GTX transceivers are used.
 
@@ -63,7 +63,7 @@ graph TD
 
 *Layer structure of the PCIe endpoint, following the instances in the schematic.*
 
-![Synthesized schematic of the PCIe endpoint showing u_phy, u_dll and u_tl blocks](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_Synthesized.png)
+![Synthesized schematic of the PCIe Protocol showing u_phy, u_dll and u_tl blocks](https://github.com/Aravindakshan953/PCIE_Protocol/blob/main/PCIE_Synthesized.png)
 
 *Synthesized schematic from Vivado: `u_phy` (PHY), `u_dll` (data link layer) and `u_tl` (transaction layer).*
 
